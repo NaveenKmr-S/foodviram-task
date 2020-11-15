@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import Header from "./components/Header";
+import Section2 from "./components/Carousel";
+import Floating from "./components/Floating";
+import { BrowserRouter , Route } from 'react-router-dom';
+import Complaint from './components/complaint';
+import Feedback from "./components/Feedback";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Route path='/com' component={Complaint} />
+        <Route path='/fed' component={Feedback} />
+        <Route path="/" exact component={() => <div>
+
+           <Header/>
+      <Section2/>
+      <Floating />
+        </div>
+        }/>
+      </BrowserRouter>
+      
+     
     </div>
   );
 }
