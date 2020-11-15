@@ -3,7 +3,9 @@
   box-sizing: border-box;
   overflow-x: hidden !important;
 }
-
+.quc{
+  color: black;
+}
 .res-img img{
   width: 410px;
   padding: 0px !important;
