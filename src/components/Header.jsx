@@ -11,7 +11,7 @@ export default function header(){
             </div>
             <div className="res-con">
                 <h1>Al Harmani Restaurant</h1>
-                <p>Quick Bites - Chinese, Briyani</p>
+                <p className="quc">Quick Bites - Chinese, Briyani</p>
                 <p className="loc">Thottapalayam, Vellore</p>
                 <p className="loc">Cost for two - ₹350( approx. )</p>
 
